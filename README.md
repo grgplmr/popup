@@ -6,9 +6,9 @@ configurer depuis l'administration.
 
 ## Fonctionnalités principales
 
-- Pop-up d'accueil affiché après un délai personnalisable
+- Pop-up d'accueil affiché après un délai personnalisable (pas de 100 ms)
 - Pop-up exit-intent détectant la sortie de la page
-- Personnalisation avancée des couleurs, dimensions et contenu
+- Personnalisation avancée des couleurs, dimensions (ajustement au pixel près) et contenu
 - Prévisualisation en temps réel dans l'administration
 - Design responsive et accessible sans dépendance jQuery
 

@@ -121,10 +121,10 @@ jQuery(document).ready(function($) {
             content: getEditorContent(prefix + 'content'),
             backgroundColor: $('[name="' + prefix + 'bg_color"]').val(),
             textColor: $('[name="' + prefix + 'text_color"]').val(),
-            fontSize: parseInt($('[name="' + prefix + 'font_size"]').val()) || 16,
-            blur: parseInt($('[name="' + prefix + 'blur"]').val()) || 20,
-            width: parseInt($('[name="' + prefix + 'width"]').val()) || 500,
-            height: parseInt($('[name="' + prefix + 'height"]').val()) || 300
+            fontSize: parseFloat($('[name="' + prefix + 'font_size"]').val()) || 16,
+            blur: parseFloat($('[name="' + prefix + 'blur"]').val()) || 20,
+            width: parseFloat($('[name="' + prefix + 'width"]').val()) || 500,
+            height: parseFloat($('[name="' + prefix + 'height"]').val()) || 300
         };
     }
     
@@ -213,9 +213,9 @@ jQuery(document).ready(function($) {
      */
     $('input[type="number"]').on('input', function() {
         const $input = $(this);
-        const min = parseInt($input.attr('min'));
-        const max = parseInt($input.attr('max'));
-        const value = parseInt($input.val());
+        const min = parseFloat($input.attr('min'));
+        const max = parseFloat($input.attr('max'));
+        const value = parseFloat($input.val());
         
         if (value < min) {
             $input.val(min);

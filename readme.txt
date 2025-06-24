@@ -4,7 +4,7 @@ Tags: popup, glassmorphism, exit-intent, welcome, modal
 Requires at least: 5.0
 Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,12 +16,12 @@ Pop-up Glassmorphism est un plugin WordPress moderne qui vous permet de créer f
 
 **Fonctionnalités principales :**
 
-* **Pop-up d'accueil** : Affichage automatique après un délai personnalisable
+* **Pop-up d'accueil** : Affichage automatique après un délai personnalisable (par pas de 100 ms)
 * **Pop-up Exit Intent** : Détection de l'intention de quitter la page
 * **Design Glassmorphism** : Effet de verre moderne et élégant
 * **Interface d'administration complète** : Configuration facile dans le back-end WordPress
 * **Éditeur riche** : Insertion de texte formaté et de liens cliquables
-* **Personnalisation avancée** : Couleurs, tailles, transparence
+* **Personnalisation avancée** : Couleurs, tailles (ajustement au pixel près), transparence
 * **Prévisualisation en temps réel** : Voir le rendu avant publication
 * **Responsive** : Compatible mobile et desktop
 * **Accessible** : Navigation clavier et focus visible
@@ -74,6 +74,10 @@ Sur desktop, la détection se fait quand la souris quitte la fenêtre par le hau
 
 == Changelog ==
 
+= 1.0.1 =
+* Délai ajustable par pas de 100 ms
+* Largeur et hauteur modifiables au pixel près
+
 = 1.0.0 =
 * Version initiale
 * Pop-up d'accueil avec délai personnalisable
@@ -85,6 +89,9 @@ Sur desktop, la détection se fait quand la souris quitte la fenêtre par le hau
 * Support multilingue
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Ajustement plus précis du délai et des dimensions dans l'administration.
 
 = 1.0.0 =
 Version initiale du plugin Pop-up Glassmorphism.

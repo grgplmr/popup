@@ -5,6 +5,12 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2024-01-02
+
+### Modifié
+- Pas de 100 ms pour le délai d'apparition du pop-up d'accueil
+- Largeur et hauteur ajustables au pixel près dans l'administration
+
 ## [1.0.0] - 2024-01-01
 
 ### Ajouté
