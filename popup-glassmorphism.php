@@ -133,7 +133,7 @@ class PopupGlassmorphism {
         wp_enqueue_script(
             'popup-glass-admin',
             POPUP_GLASS_PLUGIN_URL . 'assets/admin.js',
-            ['jquery', 'wp-color-picker'],
+            ['wp-color-picker'],
             POPUP_GLASS_VERSION,
             true
         );
