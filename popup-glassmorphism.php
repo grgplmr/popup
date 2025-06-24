@@ -46,7 +46,8 @@ class PopupGlassmorphism {
             'content' => 'Découvrez nos <strong>offres exclusives</strong> et <a href="#" style="color: #3B82F6;">profitez de -20%</a> sur votre première commande.',
             'background_color' => 'rgba(255, 255, 255, 0.25)',
             'text_color' => '#1F2937',
-            'font_size' => 16,
+            'title_font_size' => 24,
+            'content_font_size' => 16,
             'blur' => 20,
             'width' => 500,
             'height' => 300
@@ -57,7 +58,8 @@ class PopupGlassmorphism {
             'content' => 'Avant de partir, découvrez notre <strong>guide gratuit</strong> pour <a href="#" style="color: #10B981;">optimiser votre site web</a>.',
             'background_color' => 'rgba(139, 92, 246, 0.25)',
             'text_color' => '#1F2937',
-            'font_size' => 16,
+            'title_font_size' => 24,
+            'content_font_size' => 16,
             'blur' => 20,
             'width' => 450,
             'height' => 280
@@ -231,7 +233,8 @@ class PopupGlassmorphism {
             'content' => wp_kses_post($_POST['welcome_content']),
             'background_color' => sanitize_text_field($_POST['welcome_bg_color']),
             'text_color' => sanitize_hex_color($_POST['welcome_text_color']),
-            'font_size' => intval($_POST['welcome_font_size']),
+            'title_font_size' => intval($_POST['welcome_title_font_size']),
+            'content_font_size' => intval($_POST['welcome_content_font_size']),
             'blur' => intval($_POST['welcome_blur']),
             'width' => intval($_POST['welcome_width']),
             'height' => intval($_POST['welcome_height'])
@@ -244,7 +247,8 @@ class PopupGlassmorphism {
             'content' => wp_kses_post($_POST['exit_content']),
             'background_color' => sanitize_text_field($_POST['exit_bg_color']),
             'text_color' => sanitize_hex_color($_POST['exit_text_color']),
-            'font_size' => intval($_POST['exit_font_size']),
+            'title_font_size' => intval($_POST['exit_title_font_size']),
+            'content_font_size' => intval($_POST['exit_content_font_size']),
             'blur' => intval($_POST['exit_blur']),
             'width' => intval($_POST['exit_width']),
             'height' => intval($_POST['exit_height'])

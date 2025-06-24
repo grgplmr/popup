@@ -121,7 +121,8 @@ jQuery(document).ready(function($) {
             content: getEditorContent(prefix + 'content'),
             backgroundColor: $('[name="' + prefix + 'bg_color"]').val(),
             textColor: $('[name="' + prefix + 'text_color"]').val(),
-            fontSize: parseFloat($('[name="' + prefix + 'font_size"]').val()) || 16,
+            titleFontSize: parseFloat($('[name="' + prefix + 'title_font_size"]').val()) || 24,
+            contentFontSize: parseFloat($('[name="' + prefix + 'content_font_size"]').val()) || 16,
             blur: parseFloat($('[name="' + prefix + 'blur"]').val()) || 20,
             width: parseFloat($('[name="' + prefix + 'width"]').val()) || 500,
             height: parseFloat($('[name="' + prefix + 'height"]').val()) || 300
@@ -148,17 +149,16 @@ jQuery(document).ready(function($) {
                 height: ${settings.height}px;
                 background: ${settings.backgroundColor};
                 color: ${settings.textColor};
-                font-size: ${settings.fontSize}px;
                 --blur-amount: ${settings.blur}px;
                 position: relative;
                 border-radius: 20px;
                 overflow: hidden;
             ">
                 <div class="preview-content">
-                    <h2 class="preview-title" style="color: ${settings.textColor};">
+                    <h2 class="preview-title" style="color: ${settings.textColor}; font-size: ${settings.titleFontSize}px;">
                         ${escapeHtml(settings.title)}
                     </h2>
-                    <div class="preview-text" style="color: ${settings.textColor}; font-size: ${settings.fontSize}px;">
+                    <div class="preview-text" style="color: ${settings.textColor}; font-size: ${settings.contentFontSize}px;">
                         ${settings.content}
                     </div>
                 </div>

@@ -18,7 +18,6 @@ if (is_admin()) {
                 height: <?php echo esc_attr($settings['welcome_popup']['height']); ?>px;
                 background: <?php echo esc_attr($settings['welcome_popup']['background_color']); ?>;
                 color: <?php echo esc_attr($settings['welcome_popup']['text_color']); ?>;
-                font-size: <?php echo esc_attr($settings['welcome_popup']['font_size']); ?>px;
                 --blur-amount: <?php echo esc_attr($settings['welcome_popup']['blur']); ?>px;">
         
         <button class="popup-glass-close" aria-label="<?php _e('Fermer', 'popup-glassmorphism'); ?>">
@@ -26,8 +25,10 @@ if (is_admin()) {
         </button>
         
         <div class="popup-glass-content">
-            <h2 class="popup-glass-title"><?php echo esc_html($settings['welcome_popup']['title']); ?></h2>
-            <div class="popup-glass-text">
+            <h2 class="popup-glass-title" style="font-size: <?php echo esc_attr($settings['welcome_popup']['title_font_size']); ?>px;">
+                <?php echo esc_html($settings['welcome_popup']['title']); ?>
+            </h2>
+            <div class="popup-glass-text" style="font-size: <?php echo esc_attr($settings['welcome_popup']['content_font_size']); ?>px;">
                 <?php echo wp_kses_post($settings['welcome_popup']['content']); ?>
             </div>
         </div>
@@ -43,7 +44,6 @@ if (is_admin()) {
                 height: <?php echo esc_attr($settings['exit_intent_popup']['height']); ?>px;
                 background: <?php echo esc_attr($settings['exit_intent_popup']['background_color']); ?>;
                 color: <?php echo esc_attr($settings['exit_intent_popup']['text_color']); ?>;
-                font-size: <?php echo esc_attr($settings['exit_intent_popup']['font_size']); ?>px;
                 --blur-amount: <?php echo esc_attr($settings['exit_intent_popup']['blur']); ?>px;">
         
         <button class="popup-glass-close" aria-label="<?php _e('Fermer', 'popup-glassmorphism'); ?>">
@@ -51,8 +51,10 @@ if (is_admin()) {
         </button>
         
         <div class="popup-glass-content">
-            <h2 class="popup-glass-title"><?php echo esc_html($settings['exit_intent_popup']['title']); ?></h2>
-            <div class="popup-glass-text">
+            <h2 class="popup-glass-title" style="font-size: <?php echo esc_attr($settings['exit_intent_popup']['title_font_size']); ?>px;">
+                <?php echo esc_html($settings['exit_intent_popup']['title']); ?>
+            </h2>
+            <div class="popup-glass-text" style="font-size: <?php echo esc_attr($settings['exit_intent_popup']['content_font_size']); ?>px;">
                 <?php echo wp_kses_post($settings['exit_intent_popup']['content']); ?>
             </div>
         </div>
