@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Pop-up Glassmorphism 1.0.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 12:00+0000\n"
+"POT-Creation-Date: 2025-06-24 09:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,103 +17,114 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: popup-glassmorphism.php:50
+#: popup-glassmorphism.php:125 popup-glassmorphism.php:126
 msgid "Pop-up Glassmorphism"
 msgstr ""
 
-#: popup-glassmorphism.php:125
-msgid "Vous n'avez pas les permissions nécessaires."
-msgstr ""
-
-#: popup-glassmorphism.php:158
+#: popup-glassmorphism.php:172 popup-glassmorphism.php:259
 msgid "Paramètres sauvegardés avec succès !"
 msgstr ""
 
-#: popup-glassmorphism.php:243
+#: popup-glassmorphism.php:173
+msgid "Erreur lors de la sauvegarde."
+msgstr ""
+
+#: popup-glassmorphism.php:223
+msgid "Vous n'avez pas les permissions nécessaires."
+msgstr ""
+
+#: popup-glassmorphism.php:269
 msgid "Accès refusé"
 msgstr ""
 
-#: templates/admin-page.php:8
+#: templates/admin-page.php:9
 msgid "Configuration Pop-up Glassmorphism"
 msgstr ""
 
-#: templates/admin-page.php:12
+#: templates/admin-page.php:14 templates/admin-page.php:27
 msgid "Pop-up d'accueil"
 msgstr ""
 
-#: templates/admin-page.php:15
+#: templates/admin-page.php:17 templates/admin-page.php:137
 msgid "Pop-up Exit Intent"
 msgstr ""
 
-#: templates/admin-page.php:25
+#: templates/admin-page.php:31 templates/admin-page.php:141
 msgid "Activer"
 msgstr ""
 
-#: templates/admin-page.php:30
+#: templates/admin-page.php:36
 msgid "Activer le pop-up d'accueil"
 msgstr ""
 
-#: templates/admin-page.php:36
+#: templates/admin-page.php:42
 msgid "Délai d'apparition (ms)"
 msgstr ""
 
-#: templates/admin-page.php:41
+#: templates/admin-page.php:46
 msgid "Délai en millisecondes avant l'affichage du pop-up"
 msgstr ""
 
-#: templates/admin-page.php:46
+#: templates/admin-page.php:51 templates/admin-page.php:152
 msgid "Titre"
 msgstr ""
 
-#: templates/admin-page.php:53
+#: templates/admin-page.php:59 templates/admin-page.php:160
 msgid "Contenu"
 msgstr ""
 
-#: templates/admin-page.php:65
+#: templates/admin-page.php:73 templates/admin-page.php:174
 msgid "Couleur de fond"
 msgstr ""
 
-#: templates/admin-page.php:70
+#: templates/admin-page.php:78 templates/admin-page.php:179
 msgid "Format: rgba(255,255,255,0.25) pour la transparence"
 msgstr ""
 
-#: templates/admin-page.php:76
+#: templates/admin-page.php:83 templates/admin-page.php:184
 msgid "Couleur du texte"
 msgstr ""
 
-#: templates/admin-page.php:84
-msgid "Taille de police (px)"
+#: templates/admin-page.php:92 templates/admin-page.php:193
+msgid "Taille du titre (px)"
 msgstr ""
 
-#: templates/admin-page.php:91
+#: templates/admin-page.php:99 templates/admin-page.php:200
+msgid "Taille du contenu (px)"
+msgstr ""
+
+#: templates/admin-page.php:107 templates/admin-page.php:208
+msgid "Flou (px)"
+msgstr ""
+
+#: templates/admin-page.php:115 templates/admin-page.php:216
 msgid "Dimensions"
 msgstr ""
 
-#: templates/admin-page.php:94
+#: templates/admin-page.php:118 templates/admin-page.php:219
 msgid "Largeur:"
 msgstr ""
 
-#: templates/admin-page.php:100
+#: templates/admin-page.php:124 templates/admin-page.php:225
 msgid "Hauteur:"
 msgstr ""
 
-#: templates/admin-page.php:114
+#: templates/admin-page.php:146
 msgid "Activer le pop-up exit intent"
 msgstr ""
 
-#: templates/admin-page.php:200
+#: templates/admin-page.php:237
 msgid "Prévisualiser Pop-up d'accueil"
 msgstr ""
 
-#: templates/admin-page.php:203
+#: templates/admin-page.php:240
 msgid "Prévisualiser Pop-up Exit Intent"
 msgstr ""
 
-#: templates/admin-page.php:206
+#: templates/admin-page.php:243
 msgid "Sauvegarder les paramètres"
 msgstr ""
 
-#: templates/popup-html.php:22
-#: templates/popup-html.php:42
+#: templates/popup-html.php:23 templates/popup-html.php:49
 msgid "Fermer"
 msgstr ""
