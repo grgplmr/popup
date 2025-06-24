@@ -105,6 +105,12 @@
     margin: 0;
 }
 
+.popup-glass-text p {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+
 .popup-glass-text a {
     text-decoration: underline;
     font-weight: 500;
