@@ -47,6 +47,7 @@ class PopupGlassmorphism {
             'background_color' => 'rgba(255, 255, 255, 0.25)',
             'text_color' => '#1F2937',
             'font_size' => 16,
+            'blur' => 20,
             'width' => 500,
             'height' => 300
         ],
@@ -57,6 +58,7 @@ class PopupGlassmorphism {
             'background_color' => 'rgba(139, 92, 246, 0.25)',
             'text_color' => '#1F2937',
             'font_size' => 16,
+            'blur' => 20,
             'width' => 450,
             'height' => 280
         ]
@@ -95,8 +97,14 @@ class PopupGlassmorphism {
      */
     public function init() {
         // Initialiser les options par défaut si elles n'existent pas
-        if (!get_option('popup_glass_settings')) {
+        $settings = get_option('popup_glass_settings');
+        if (!$settings) {
             add_option('popup_glass_settings', $this->default_options);
+        } else {
+            $merged = wp_parse_args($settings, $this->default_options);
+            if ($merged !== $settings) {
+                update_option('popup_glass_settings', $merged);
+            }
         }
     }
     
@@ -190,6 +198,7 @@ class PopupGlassmorphism {
         
         // Passer les paramètres au JavaScript
         $settings = get_option('popup_glass_settings', $this->default_options);
+        $settings = wp_parse_args($settings, $this->default_options);
         wp_localize_script('popup-glass-frontend', 'popupGlassSettings', $settings);
     }
     
@@ -198,6 +207,7 @@ class PopupGlassmorphism {
      */
     public function admin_page() {
         $settings = get_option('popup_glass_settings', $this->default_options);
+        $settings = wp_parse_args($settings, $this->default_options);
         include POPUP_GLASS_PLUGIN_PATH . 'templates/admin-page.php';
     }
     
@@ -222,6 +232,7 @@ class PopupGlassmorphism {
             'background_color' => sanitize_text_field($_POST['welcome_bg_color']),
             'text_color' => sanitize_hex_color($_POST['welcome_text_color']),
             'font_size' => intval($_POST['welcome_font_size']),
+            'blur' => intval($_POST['welcome_blur']),
             'width' => intval($_POST['welcome_width']),
             'height' => intval($_POST['welcome_height'])
         ];
@@ -234,6 +245,7 @@ class PopupGlassmorphism {
             'background_color' => sanitize_text_field($_POST['exit_bg_color']),
             'text_color' => sanitize_hex_color($_POST['exit_text_color']),
             'font_size' => intval($_POST['exit_font_size']),
+            'blur' => intval($_POST['exit_blur']),
             'width' => intval($_POST['exit_width']),
             'height' => intval($_POST['exit_height'])
         ];
@@ -266,6 +278,7 @@ class PopupGlassmorphism {
         }
         
         $settings = get_option('popup_glass_settings', $this->default_options);
+        $settings = wp_parse_args($settings, $this->default_options);
         include POPUP_GLASS_PLUGIN_PATH . 'templates/popup-html.php';
     }
     

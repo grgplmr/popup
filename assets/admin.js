@@ -122,6 +122,7 @@ jQuery(document).ready(function($) {
             backgroundColor: $('[name="' + prefix + 'bg_color"]').val(),
             textColor: $('[name="' + prefix + 'text_color"]').val(),
             fontSize: parseInt($('[name="' + prefix + 'font_size"]').val()) || 16,
+            blur: parseInt($('[name="' + prefix + 'blur"]').val()) || 20,
             width: parseInt($('[name="' + prefix + 'width"]').val()) || 500,
             height: parseInt($('[name="' + prefix + 'height"]').val()) || 300
         };
@@ -143,11 +144,12 @@ jQuery(document).ready(function($) {
     function createPreviewHtml(settings) {
         return `
             <div style="
-                width: ${settings.width}px; 
+                width: ${settings.width}px;
                 height: ${settings.height}px;
                 background: ${settings.backgroundColor};
                 color: ${settings.textColor};
                 font-size: ${settings.fontSize}px;
+                --blur-amount: ${settings.blur}px;
                 position: relative;
                 border-radius: 20px;
                 overflow: hidden;
