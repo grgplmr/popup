@@ -130,10 +130,20 @@ class PopupGlassmorphism {
             return;
         }
         
+        // Librairie pour la gestion des couleurs avec transparence
+        wp_register_script(
+            'wp-color-picker-alpha',
+            POPUP_GLASS_PLUGIN_URL . 'assets/wp-color-picker-alpha.js',
+            ['wp-color-picker'],
+            POPUP_GLASS_VERSION,
+            true
+        );
+        wp_enqueue_script('wp-color-picker-alpha');
+
         wp_enqueue_script(
             'popup-glass-admin',
             POPUP_GLASS_PLUGIN_URL . 'assets/admin.js',
-            ['jquery', 'wp-color-picker'],
+            ['jquery', 'wp-color-picker', 'wp-color-picker-alpha'],
             POPUP_GLASS_VERSION,
             true
         );

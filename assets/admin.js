@@ -7,6 +7,7 @@ jQuery(document).ready(function($) {
     
     // Initialiser les color pickers
     $('.color-picker').wpColorPicker();
+    $('.color-picker-rgba').wpColorPicker({ palettes: true, type: 'rgba' });
     
     // Gestion des onglets
     $('.tab-button').on('click', function() {
@@ -204,22 +205,6 @@ jQuery(document).ready(function($) {
         }, 500);
     }
     
-    /**
-     * Gestion des couleurs RGBA personnalisées
-     */
-    $('.color-picker-rgba').each(function() {
-        const $input = $(this);
-        const $preview = $('<div class="color-preview"></div>');
-        
-        $input.after($preview);
-        
-        function updatePreview() {
-            $preview.css('background-color', $input.val());
-        }
-        
-        updatePreview();
-        $input.on('input change', updatePreview);
-    });
     
     /**
      * Validation en temps réel
