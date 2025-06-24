@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pop-up Glassmorphism 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: popup-glassmorphism.php:50
+msgid "Pop-up Glassmorphism"
+msgstr ""
+
+#: popup-glassmorphism.php:125
+msgid "Vous n'avez pas les permissions nécessaires."
+msgstr ""
+
+#: popup-glassmorphism.php:158
+msgid "Paramètres sauvegardés avec succès !"
+msgstr ""
+
+#: templates/admin-page.php:8
+msgid "Configuration Pop-up Glassmorphism"
+msgstr ""
+
+#: templates/admin-page.php:12
+msgid "Pop-up d'accueil"
+msgstr ""
+
+#: templates/admin-page.php:15
+msgid "Pop-up Exit Intent"
+msgstr ""
+
+#: templates/admin-page.php:25
+msgid "Activer"
+msgstr ""
+
+#: templates/admin-page.php:30
+msgid "Activer le pop-up d'accueil"
+msgstr ""
+
+#: templates/admin-page.php:36
+msgid "Délai d'apparition (ms)"
+msgstr ""
+
+#: templates/admin-page.php:41
+msgid "Délai en millisecondes avant l'affichage du pop-up"
+msgstr ""
+
+#: templates/admin-page.php:46
+msgid "Titre"
+msgstr ""
+
+#: templates/admin-page.php:53
+msgid "Contenu"
+msgstr ""
+
+#: templates/admin-page.php:65
+msgid "Couleur de fond"
+msgstr ""
+
+#: templates/admin-page.php:70
+msgid "Format: rgba(255,255,255,0.25) pour la transparence"
+msgstr ""
+
+#: templates/admin-page.php:76
+msgid "Couleur du texte"
+msgstr ""
+
+#: templates/admin-page.php:84
+msgid "Taille de police (px)"
+msgstr ""
+
+#: templates/admin-page.php:91
+msgid "Dimensions"
+msgstr ""
+
+#: templates/admin-page.php:94
+msgid "Largeur:"
+msgstr ""
+
+#: templates/admin-page.php:100
+msgid "Hauteur:"
+msgstr ""
+
+#: templates/admin-page.php:114
+msgid "Activer le pop-up exit intent"
+msgstr ""
+
+#: templates/admin-page.php:200
+msgid "Prévisualiser Pop-up d'accueil"
+msgstr ""
+
+#: templates/admin-page.php:203
+msgid "Prévisualiser Pop-up Exit Intent"
+msgstr ""
+
+#: templates/admin-page.php:206
+msgid "Sauvegarder les paramètres"
+msgstr ""
+
+#: templates/popup-html.php:22
+#: templates/popup-html.php:42
+msgid "Fermer"
+msgstr ""
