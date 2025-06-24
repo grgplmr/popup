@@ -171,6 +171,12 @@
     margin: 0;
 }
 
+.preview-text p {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+
 .preview-text a {
     text-decoration: underline;
     font-weight: 500;
