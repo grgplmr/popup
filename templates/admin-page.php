@@ -41,7 +41,7 @@ if (!defined('ABSPATH')) {
                         <tr>
                             <th scope="row"><?php _e('Délai d\'apparition (ms)', 'popup-glassmorphism'); ?></th>
                             <td>
-                                <input type="number" name="welcome_delay" min="0" max="30000" step="500"
+                                <input type="number" name="welcome_delay" min="0" max="30000" step="100"
                                        value="<?php echo esc_attr($settings['welcome_popup']['delay']); ?>" class="regular-text">
                                 <p class="description"><?php _e('Délai en millisecondes avant l\'affichage du pop-up', 'popup-glassmorphism'); ?></p>
                             </td>
@@ -109,13 +109,13 @@ if (!defined('ABSPATH')) {
                             <td>
                                 <label>
                                     <?php _e('Largeur:', 'popup-glassmorphism'); ?>
-                                    <input type="number" name="welcome_width" min="300" max="800"
+                                    <input type="number" name="welcome_width" min="300" max="800" step="1"
                                            value="<?php echo esc_attr($settings['welcome_popup']['width']); ?>" class="small-text"> px
                                 </label>
                                 <br><br>
                                 <label>
                                     <?php _e('Hauteur:', 'popup-glassmorphism'); ?>
-                                    <input type="number" name="welcome_height" min="200" max="600"
+                                    <input type="number" name="welcome_height" min="200" max="600" step="1"
                                            value="<?php echo esc_attr($settings['welcome_popup']['height']); ?>" class="small-text"> px
                                 </label>
                             </td>
@@ -203,13 +203,13 @@ if (!defined('ABSPATH')) {
                             <td>
                                 <label>
                                     <?php _e('Largeur:', 'popup-glassmorphism'); ?>
-                                    <input type="number" name="exit_width" min="300" max="800"
+                                    <input type="number" name="exit_width" min="300" max="800" step="1"
                                            value="<?php echo esc_attr($settings['exit_intent_popup']['width']); ?>" class="small-text"> px
                                 </label>
                                 <br><br>
                                 <label>
                                     <?php _e('Hauteur:', 'popup-glassmorphism'); ?>
-                                    <input type="number" name="exit_height" min="200" max="600"
+                                    <input type="number" name="exit_height" min="200" max="600" step="1"
                                            value="<?php echo esc_attr($settings['exit_intent_popup']['height']); ?>" class="small-text"> px
                                 </label>
                             </td>
