@@ -95,6 +95,14 @@ if (!defined('ABSPATH')) {
                                        value="<?php echo esc_attr($settings['welcome_popup']['font_size']); ?>" class="small-text">
                             </td>
                         </tr>
+
+                        <tr>
+                            <th scope="row"><?php _e('Flou (px)', 'popup-glassmorphism'); ?></th>
+                            <td>
+                                <input type="number" name="welcome_blur" min="0" max="50"
+                                       value="<?php echo esc_attr($settings['welcome_popup']['blur']); ?>" class="small-text">
+                            </td>
+                        </tr>
                         
                         <tr>
                             <th scope="row"><?php _e('Dimensions', 'popup-glassmorphism'); ?></th>
@@ -179,6 +187,14 @@ if (!defined('ABSPATH')) {
                             <td>
                                 <input type="number" name="exit_font_size" min="12" max="24"
                                        value="<?php echo esc_attr($settings['exit_intent_popup']['font_size']); ?>" class="small-text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"><?php _e('Flou (px)', 'popup-glassmorphism'); ?></th>
+                            <td>
+                                <input type="number" name="exit_blur" min="0" max="50"
+                                       value="<?php echo esc_attr($settings['exit_intent_popup']['blur']); ?>" class="small-text">
                             </td>
                         </tr>
                         
