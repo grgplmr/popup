@@ -29,6 +29,10 @@ msgstr ""
 msgid "Paramètres sauvegardés avec succès !"
 msgstr ""
 
+#: popup-glassmorphism.php:243
+msgid "Accès refusé"
+msgstr ""
+
 #: templates/admin-page.php:8
 msgid "Configuration Pop-up Glassmorphism"
 msgstr ""

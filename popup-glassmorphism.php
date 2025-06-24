@@ -238,7 +238,11 @@ class PopupGlassmorphism {
      */
     public function get_popup_settings() {
         check_ajax_referer('popup_glass_nonce', 'nonce');
-        
+
+        if ( ! current_user_can( 'manage_options' ) ) {
+            wp_send_json_error( __( 'Accès refusé', 'popup-glassmorphism' ) );
+        }
+
         $settings = get_option('popup_glass_settings', $this->default_options);
         wp_send_json_success($settings);
     }
