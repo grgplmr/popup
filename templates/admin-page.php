@@ -89,10 +89,17 @@ if (!defined('ABSPATH')) {
                         </tr>
                         
                         <tr>
-                            <th scope="row"><?php _e('Taille de police (px)', 'popup-glassmorphism'); ?></th>
+                            <th scope="row"><?php _e('Taille du titre (px)', 'popup-glassmorphism'); ?></th>
                             <td>
-                                <input type="number" name="welcome_font_size" min="12" max="24"
-                                       value="<?php echo esc_attr($settings['welcome_popup']['font_size']); ?>" class="small-text">
+                                <input type="number" name="welcome_title_font_size" min="12" max="36"
+                                       value="<?php echo esc_attr($settings['welcome_popup']['title_font_size']); ?>" class="small-text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><?php _e('Taille du contenu (px)', 'popup-glassmorphism'); ?></th>
+                            <td>
+                                <input type="number" name="welcome_content_font_size" min="12" max="24"
+                                       value="<?php echo esc_attr($settings['welcome_popup']['content_font_size']); ?>" class="small-text">
                             </td>
                         </tr>
 
@@ -183,10 +190,17 @@ if (!defined('ABSPATH')) {
                         </tr>
                         
                         <tr>
-                            <th scope="row"><?php _e('Taille de police (px)', 'popup-glassmorphism'); ?></th>
+                            <th scope="row"><?php _e('Taille du titre (px)', 'popup-glassmorphism'); ?></th>
                             <td>
-                                <input type="number" name="exit_font_size" min="12" max="24"
-                                       value="<?php echo esc_attr($settings['exit_intent_popup']['font_size']); ?>" class="small-text">
+                                <input type="number" name="exit_title_font_size" min="12" max="36"
+                                       value="<?php echo esc_attr($settings['exit_intent_popup']['title_font_size']); ?>" class="small-text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><?php _e('Taille du contenu (px)', 'popup-glassmorphism'); ?></th>
+                            <td>
+                                <input type="number" name="exit_content_font_size" min="12" max="24"
+                                       value="<?php echo esc_attr($settings['exit_intent_popup']['content_font_size']); ?>" class="small-text">
                             </td>
                         </tr>
 
